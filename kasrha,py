@@ -1,0 +1,46 @@
+def sum(x,y):
+    result={}
+    result["s"]=(kasr1["s"]*kasr2["m"])+(kasr2["s"]*kasr1["m"])
+    result["m"]=kasr1["m"]*kasr2["m"]
+    return result
+
+def tafrigh(x,y):
+    result={}
+    result["s"]=(kasr1["s"]*kasr2["m"])-(kasr2["s"]*kasr1["m"])
+    result["m"]=kasr1["m"]*kasr2["m"]
+    return result
+
+def zarb(x,y):
+    result={}
+    result["s"]=kasr1["s"]*kasr2["s"]
+    result["m"]=kasr1["m"]*kasr2["m"]
+    return result 
+
+def taghsim(x,y):
+    result={}
+    result["s"]=kasr1["s"]*kasr2["m"]
+    result["m"]=kasr1["m"]*kasr2["s"]
+    return result
+
+def show(result):
+    print(f"{result['s']}/{result['m']}")
+
+
+kasr1={"s":2,"m":3}
+kasr2={"s":4,"m":5}
+
+result_sum=sum(kasr1,kasr2)
+print("javab sum is :")
+show(result_sum)
+
+result_tafrigh=tafrigh(kasr1,kasr2)
+print("javab tafrigh is :")
+show(result_tafrigh)
+
+result_zarb=zarb(kasr1,kasr2)
+print("javab zarb is :")
+show(result_zarb)
+
+result_taghsim=taghsim(kasr1,kasr2)
+print("javab taghsim is :")
+show(result_taghsim)
